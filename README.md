@@ -1,5 +1,8 @@
 # Flask Application Deployment 
 
+## access application 
+>ec2-13-201-51-106.ap-south-1.compute.amazonaws.com
+
 ## steps to replicate 
 
 ## ceate a basic falsk application 
@@ -10,6 +13,7 @@ code for basic application is in app.py
 
 use:  
 > git add .  
+> git commit -m "message"
 > git push
 
 ## create a docker file for the project 
