@@ -1,4 +1,4 @@
-name: CI notify
+name: CD on aws 
 
 # Only trigger, when the build workflow succeeded
 on:
@@ -16,4 +16,4 @@ jobs:
     - name: delete the old docker container 
       run: sudo docker rm -f helloazure || true
     - name: run latest container 
-      run: sudo docker run -d -p 5000:5000 --name helloazure -t arunparmal/helloazure:latest 
+      run: sudo docker run -d -p 5000:5000 --restart unless-stopped --name helloazure -t arunparmal/helloazure:latest 
